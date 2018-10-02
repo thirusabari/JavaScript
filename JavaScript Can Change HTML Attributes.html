@@ -1,0 +1,38 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>JavaScript Can Change HTML Attributes</title>
+        <style>
+            button{
+                padding-right: 20px;
+            }
+            #bulb{
+                width:500px;
+                height:400px;
+                border:2px solid gold;
+            }
+            #Change{
+                width:500px;
+                height:400px;
+            }
+        </style>
+    </head>
+    <body>
+<pre>This example changes an HTML image by changing the src (source) attribute of an <b>img</b> tag.</pre>
+<button onclick="LO()">LightsOn</button>
+<button onclick="LF()">LightsOff</button>
+<br>
+<br>
+<br>
+<br>
+<div id="bulb"><img id="Change"></div>
+<script>
+    function LO(){
+        document.getElementById("Change").src="LightsOn.jpg";
+    }
+    function LF(){
+        document.getElementById("Change").src="LightsOff.jpg";
+    }
+</script>
+    </body>
+</html>
