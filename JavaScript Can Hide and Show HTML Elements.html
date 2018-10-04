@@ -1,0 +1,42 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>JavaScript Can Hide And Show HTML Elements</title>
+        <style>
+            #Hide{
+                width:400px;
+                height:300px;
+                border:2px solid firebrick;
+            }
+            button{
+                width:100px;
+                height:50px;
+                text-align: center;
+                float: left;
+            }
+        </style>
+    </head>
+    <body>
+<pre>Hiding HTML elements can be done by changing the display style:</pre>
+<br>
+<br>
+<div id="Hide">
+    <p>I love you TamilSelvi</p>
+    <p>I Like you TamilSelvi</p>
+    <p>You are my lover TamilSelvi</p>
+    <p>TamilSelvi is my wife</p>
+</div>
+<br>
+<br>
+<button onclick="hide()">Hide</button>
+<button onclick="show()">Show</button>
+<script>
+    function hide(){
+document.getElementById("Hide").style.display="none";
+    }
+    function show(){
+        document.getElementById("Hide").style.display="block";
+    }
+</script>
+    </body>
+</html>

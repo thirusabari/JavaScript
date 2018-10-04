@@ -1,0 +1,32 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Accessing Object Methods</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+        <pre>You can access an object method with the following syntax: 
+
+            objectName.methodName();
+        </pre>
+        <br>
+        <br>
+        <button onclick="method()">Accessing Object Methods</button>
+        <br>
+        <br>
+        <script>
+        function method(){
+            
+            var person={
+                get() {
+                    return document.write("TamilSelvi is my wife");
+                }
+            }
+            person.get();
+        }
+        
+        </script>
+    </body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Accessing Object Properties</title>
+    </head>
+    <body>
+        <pre>You can access object properties in two ways: 
+
+            objectName.propertyName
+
+            or
+
+            objectName["propertyName"]
+        </pre>
+        <br>
+        <button onclick="property()">show Properties</button>
+        <br>
+        <script>
+        function property(){
+            var life={wife:"TamilSelvi",FavCar:"AudiR8",FamilyCar:"Audi Q7"};
+            return document.writeln("life.wife = " +life.wife + "  life[FavCar] = "+life["FavCar"]);
+        }
+        </script>
+    </body>
+</html>

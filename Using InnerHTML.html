@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Using InnerHTML</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <pre>The <b>innerHTML</b> property defines the HTML content.
+        
+        Changing the innerHTML property of the HTML element is a common way to display data in HTML.</pre>
+        
+        <h2>InnerHTML:</h2>
+        <br>
+        <p id="demo">TamilSelvi is my wife.</p>
+        <br>
+        <br>
+        <button onclick="html()">innerHTML</button>
+        <script>
+        function html(){
+            document.getElementById("demo").innerHTML="I love you TamilSelvi";
+        }
+        </script>
+    </body>
+</html>
