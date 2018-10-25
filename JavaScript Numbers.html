@@ -1,0 +1,42 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>JavaScript Numbers</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>JavaScript Numbers</h1>
+        <br>
+        <h3>HexaDecimal</h3>
+        <pre>JavaScript intreprets numeric constants as hexadecimal if they are preceded by <b>0x</b>
+        
+            By Default, JavaScript Displayes numbers as base 10 decimals.
+
+            But you can use the toString() method to output numbers as base 16)hex), base 8(otcal), or base 2(inary)
+        </pre>
+        <br>
+       <script>
+       var x=0xAD2;
+       var y=123;
+       document.writeln("The hexadecimal value is = ",y.toString(16));
+       document.writeln("The octal value is = ",x.toString(8));
+       document.writeln("The binary value = ",x.toString(2));
+       document.write("The typeof Infinity = ",typeof Infinity);
+       </script> 
+       <br>
+       <script>
+       document.write("The Nan value is = ",100/"Apple");
+       </script>
+       <h5>Numbers can be objects</h5>
+       <pre>Normally JavaScript numbers are primitive values created from literals: var x = 123;
+
+        But numbers can also be defined as objects with the keyword new :  <b>var y=new numbers(123);</b>
+       </pre>
+       <br>
+       <script>
+       var n=new Number(123678);
+       document.write("The numbers can be used as objects = ",n);
+       </script>
+    </body>
+</html>

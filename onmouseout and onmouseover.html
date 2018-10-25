@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>onmouseover and onmouseout events</title>
+    </head>
+    <style>
+    #dem , #one {
+        width: 700px;
+        height: 400px;
+        border:2px solid yellowgreen;
+    }
+    </style>
+    <body>
+        <h1>OnMouseOver and OnMouseOut Events</h1>
+        <div id="dem">
+            <img src="LightsOff.jpg" onmouseover="audi()" onmouseout="iloveu()" id="one">
+        </div>
+        <br>
+        <script>
+            function audi(){
+           document.getElementById("one").src="Audi_R8.jpg";
+            }
+            function iloveu(){
+                document.getElementById("one").src="ILoveU.jpg";
+            }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>
+            Finding a String in a String
+        </title>
+    </head>
+    <body>
+        <pre>The <b>indexof()</b> method returns the index position of first occurrence (or) last occurrence letter in the given string.
+        
+        We are following the below ways:
+            firstIndexOf()
+            lastIndexOf()
+
+        Note:
+    If the searched word not found, it will return as -1.    
+    </pre>
+        <br>
+        <h3>IndexOf()</h3>
+        <script>
+        var tt="I love you TamilSelvi. TamilSelvi Loves Thirunavukkarasu. TamilSelvi is my wife."
+        document.write("First Index of i = ",tt.indexOf("i"));
+        </script>
+        <br>
+        <h3>lastIndexOf()</h3>
+        <script>
+        var tt="I need you TamilSelvi.TamilSelvi Loves Thirunavukkarasu. TamilSelvi is my wife.";
+        document.write("Last Index Of = ",tt.lastIndexOf("TamilSelvi"));
+        </script>
+        <br>
+        <script>
+        var ts="I Love you TamilSelvi. TamilSelvi Loves Thirunavukkarasu. TamilSelvi is my wife.";
+        document.write("If the desired string not found for indexOf(), it will return the value as  = ", ts.indexOf("z")+" And lastIndexOf()"+ts.lastIndexOf("z"));
+        </script>
+    </body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>OnKeyUp And OnKeyDown Events</title>
+        <style>
+        #demo{
+            width:700px;
+            height: 400px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>OnKeyUp And OnKeyDown Events</h1>
+        <br>
+        <input type="text" onkeyup="up()" onkeydown="down()" id="demo">
+        <br>
+        <script>
+        function up(){
+            document.getElementById("demo").style.backgroundColor="lightgreen";
+        }
+        function down(){
+            document.getElementById("demo").style.backgroundColor="greenyellow";
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title> onChange Event</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <pre>The onchange event occurs when the value of an element has been changed.
+
+            For radiobutton and checkboxes, the onchange event occurs when the checked state has been changed.
+        </pre>
+        <br>
+        <input type="text" name="sen" onchange="changes(this.value)">
+        <br>
+        <br>
+        <p id="one"></p>
+        <script>
+        function changes(e){
+document.getElementById("one").innerHTML=e;
+        }
+        </script>
+    </body>
+</html>

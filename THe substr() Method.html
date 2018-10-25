@@ -1,0 +1,43 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The substr() Method</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+        <pre>
+            <b>substr</b> is similar to slice.
+
+            The difference is that the second parameter specifies the <b>length</b> of the extracted part.
+
+            <h4>Note:</h4>
+            <pre>If the first parameter is negative, the position counts from the end of the string.
+
+                The Second parameter can not be negative, because it defines the length.
+
+                If you omit the second parameter, substr() will slice out the rest of the string.
+            </pre>
+            <br>
+            <script>
+            var s="I love you TamilSelvi. I need you TamilSelvi";
+            var r=s.substr(0,20);
+            document.write("The substr() text is = ",r);
+            </script>
+            <br>
+            <script>
+            var q="I like you TamilSelvi. TamilSelvi Loves Thirunavukkarasu";
+            var u=q.slice(-1,-15);
+            document.write("The Negative marked sub string text is =",u);
+            </script>
+            <br>
+            <script>
+            var e="TamilSelvi Loves Thirunavukkarasu";
+            var f=e.substr(-1);
+            document.write("The sub string length is not defined. The text are = ",f);
+            </script>
+
+        </pre>
+    </body>
+</html>
