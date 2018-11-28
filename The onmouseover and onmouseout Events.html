@@ -1,0 +1,26 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The onmouseover and onmouseout Events</title>
+        <style>
+        pre{
+            display: none;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>The onmouseover and onmouseout Events</h1>
+        <br>
+        <pre>The onmouseover and onmouseout events can be used to trigger a function when the user mouse over, or out of, am HTML element:  </pre>
+        <br>
+        <h3 onmouseover="one()" onmouseout="two()" id="TamilSelvi">I Love you TamilSelvi. Thirunavukkarasu is the husband of TamilSelvi.</h3>
+    </body>
+    <script>
+    function one(){
+document.getElementById("TamilSelvi").style.color="red";
+    }
+    function two(){
+        document.getElementById("TamilSelvi").style.color="blue";
+    }
+    </script>
+</html>

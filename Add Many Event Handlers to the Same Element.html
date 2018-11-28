@@ -1,0 +1,39 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Add Many Event Handlers to the Same HTML Element</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+<h1 id="TamilSelvi">Add Many Event handlers to the Same HTML Element</h1>
+<br>
+<pre>The <b>addEventListener()</b> method allows you to add many events to the same element without overwriting existing events. </pre>
+<br>
+
+    </body>
+    <script>
+    document.getElementById("TamilSelvi").addEventListener("mouseover",over);
+    document.getElementById("TamilSelvi").addEventListener("mouseout",out);
+    document.getElementById("TamilSelvi").addEventListener("mousedown",down);
+    document.getElementById("TamilSelvi").addEventListener("mouseup",up);
+    document.getElementById("TamilSelvi").addEventListener("click",touch);
+    var heading=document.getElementById("TamilSelvi");
+    function over(){
+heading.style.color="red";
+    }
+    function out(){
+        heading.style.color="blue";
+    }
+    function down(){
+        heading.style.color="green";
+    }
+    function up(){
+        heading.style.color="yellow";
+    }
+    function touch(){
+        heading.style.color="orange";
+    }
+    </script>
+</html>
