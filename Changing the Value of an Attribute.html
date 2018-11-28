@@ -1,0 +1,32 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Changing the Value of an Attribute</title>
+        <style>
+        pre{
+            display:none;
+        }
+        img{
+            width:600px;
+            height: 400px;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Changing the Value of an Attribute</h1>
+        <br>
+        <pre>To Change the value of an HTML Attribute, use this syntax: 
+            <b>document.getElementById("one").attribute=new value</b>
+            <br>
+            This example changes the value of the src attribute of an <b>img</b> element.
+        </pre>
+        <br>
+        <img id="TamilSelvi" src="My Body.JPG">
+    </body>
+<script>
+    setTimeout(function(done){
+        document.getElementById("TamilSelvi").src="My Personal Car_Adui R8.JPG";
+        done();
+    },5000);
+</script>
+</html>

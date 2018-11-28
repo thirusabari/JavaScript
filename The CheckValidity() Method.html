@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The checkValidity Method</title>
+    </head>
+    <body>
+        <h1>The checkValidity() Method</h1>
+        <pre>
+            <b>checkValidity()</b>  Returns true if an input element contains valid data.
+
+            If an input field contains invalid data, display a message.
+        </pre>
+        <br>
+        <input id="TamilSelvi" type="number" min="100" max="300" required>
+        <button onclick="validate()">OK</button>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <script>
+            function validate(){
+        var inputObj=document.getElementById("TamilSelvi");
+        if(inputObj.checkValidity() == false){
+document.getElementById("demo").innerHTML=inputObj.validationMessage;
+        }
+            }
+        </script>
+    </body>
+</html>

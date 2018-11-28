@@ -1,0 +1,32 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Converting Arrays into Strings</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>Converting Arrays into Strings</h1>
+        <pre>The JavaScript method toString() converts an array to a string of (comma separated) array values.
+
+
+            And
+
+
+            The <b>join()</b> method also joins all array elements into a string.
+
+            It behaves just like toString(), but in addition you can specify the separator.
+        </pre>
+        <br>
+        <p id="one"></p>
+        <br>
+        <p id="two"></p>
+        <br>
+        <script>
+        var cars=["Audi R8","Audi Q7","Ducati R SuperSport"];
+        var wife=["TamilSelvi","Tamil","Selvi"];
+        document.getElementById("one").innerHTML=cars.toString();
+        document.getElementById("two").innerHTML=wife.join();
+        </script>
+    </body>
+</html>

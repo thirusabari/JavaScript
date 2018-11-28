@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Converting a Java Script Object Notation Text into a JavaScript Object</title>
+    </head>
+    <body>
+        <h1>Converting a Java Script Object Notation Text into a JavaScript Object</h1>
+        <pre>
+            A Common use of JSON is to read data from a web server, and display the data in a web page.
+
+            For Simplicity, this can be demonstrated using a string as input.
+
+            First, create a JavaScript string containing JSON syntax.
+
+            Then, use the JavaScript built-in function <b>JSON.parse()</b> to convert the string into a JavaScript Object.
+
+            Finally use the new JavaScript object in your page:
+        </pre>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <script>
+        var tt='{"employees":['+'{"firstName":"John","lastName":"Doe"},'+'{"firstName":"Anna","lastName":"Smith"},'+'{"firstName":"Peter","lastName":"Jones"}]}';
+        var o=JSON.parse(tt);
+        document.getElementById("demo").innerHTML=o.employees[1].firstName + " " + o.employees[1].lastName;
+        </script>
+    </body>
+</html>

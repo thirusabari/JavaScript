@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Invoking a Function as a Method</title>
+    </head>
+    <body>
+        <h1>Invoking a Function as a Method</h1>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <button onclick="change()">Change</button>
+        <script>
+        var TamilSelvi={
+              firstName: "I Love You",
+              lastName: "TamilSelvi",
+              fullName: function(){
+                  return this.firstName + " " + this.lastName;
+              }
+        };
+        function change(){
+            document.getElementById("demo").innerHTML=TamilSelvi.fullName();
+        }
+        </script>
+    </body>
+</html>

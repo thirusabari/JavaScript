@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Changing HTML Style</title>
+    </head>
+    <body>
+        <h1>Changing HTML Style</h1>
+        <pre>To change the style of an HTML element, use this syntax : 
+
+            <b>document.getElementById(id).style.property = new style </b>
+
+            The following example changes the style of a <b>p</b> element.
+        </pre>
+        <br>
+        <p id="TamilSelvi">I Love you TamilSelvi. </p>
+        <br>
+    </body>
+    <script>
+        setTimeout(function(done){
+    document.getElementById("TamilSelvi").style.color="red";
+    document.getElementById("TamilSelvi").style.fontSize="50px";
+    done();
+},6000);
+    </script>
+</html>

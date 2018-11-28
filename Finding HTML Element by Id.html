@@ -1,0 +1,25 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Finding HTML Element by Id</title>
+    </head>
+    <body>
+        <h1>Finding HTML Element by Id</h1>
+        <br>
+        <pre>The easiest way to find an HTML element in the DOM is by using the element id.
+
+            This example finds the element with <b>id="intro"</b>
+
+            If the element is found, the method will return the element as an object (in myElement).
+
+            If the element is not found, myElement will contains null.
+        </pre>
+        <br>
+        <p id="demo">I Love you TamilSelvi</p>
+        <br>
+        <script>
+        var TamilSelvi=document.getElementById("demo").innerHTML;
+        document.write("TamilSelvi is my wife  = " +TamilSelvi);
+        </script>
+    </body>
+</html>

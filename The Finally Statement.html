@@ -1,0 +1,38 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The Finally Statement</title>
+    </head>
+    <body>
+        <h1>The Finally Statement</h1>
+        <pre>The <b>finally</b> statement lets you execute code. after try and catch, regardless of the result.
+        
+        try{
+            Block of code to try
+        }
+        catch(err){
+            Block of code to handle errors
+        }
+        finally{
+            Block of code to be executed regardless of the try/catch result.
+        }    
+        </pre>
+        <br>
+        <p id="demo"></p>
+        <br>
+        <script>
+        var x=prompt("Enter your wife name");
+        try{
+            if(x=="TamilSelvi"){
+                throw "I love you TamilSelvi";
+            }
+        }
+        catch(err){
+            document.getElementById("demo").innerHTML=err.message;
+        }
+        finally{
+            document.getElementById("demo").innerHTML="I Love you TamilSelvi";
+        }
+        </script>
+    </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>HTML Form Example</title>
+    </head>
+    <body>
+        <h1>HTML Form Example</h1>
+        <br>
+        <form name="myself" onsubmit="validate()">
+        Name: <input type="text" id="fname">
+        <input type="submit" value="Submit">
+        </form>
+        <br>
+        <script>
+        function validate(){
+            var firstName=document.getElementById("fname").value;
+            if(firstName == "TamilSelvi"){
+                document.write("I love you " + firstName);
+            }
+        }
+        </script>
+    </body>
+</html>

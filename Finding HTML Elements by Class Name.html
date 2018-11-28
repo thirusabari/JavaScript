@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Finding HTML Elements by Class Name</title>
+        <style>
+        .TamilSelvi{
+            display:none;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Finding HTML Elements by Class Name</h1>
+        <br>
+        <pre>If you want to find all HTML elements with the same class name, use getElementByClassName().
+
+            This example returns a list of all elements with class = "TamilSelvi"
+        </pre>
+        <br>
+        <p class="TamilSelvi">I Love you TamilSelvi</p>
+        <p class="TamilSelvi">TamilSelvi is my wife</p>
+        <p class="TamilSelvi">TamilSelvi Weds Thirunavukkarasu</p>
+    </body>
+    <script>
+    var i=document.getElementsByClassName("TamilSelvi");
+    document.write(" "+ i[0].innerHTML + ". " +i[1].innerHTML + ". "+i[2].innerHTML + ".");
+    </script>
+</html>

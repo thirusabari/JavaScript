@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Shifting Elements</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <pre>Shifting is equivalent to popping, working on the first element instead of the last.
+
+            The <b>shift()</b> method removes the first array element and "shifts" all other elements to a lower index.
+        </pre>
+        <br>
+        <script>
+        var fruits=["Orange","Apple","Mango","Banana"];
+        fruits.shift();
+        document.write("The Shift() fruits values are = ",fruits);
+        </script>
+        <br>
+        <pre>The <b>unshift()</b> method adds a new element to an array (at the beginning) and "unshifts" older elements</pre>
+        <br>
+        <script>
+        var cars=["Audi R8","Audi Q7","Ducati R SuperSport","TamilSelvi"];
+        cars.unshift("I Love you TamilSelvi");
+        document.write("The unshift() cars values are = ",cars);
+        </script>
+    </body>
+</html>

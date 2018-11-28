@@ -1,0 +1,58 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Creating Animation Using JavaScript</title>
+        <style>
+        #container{
+            width:570px;
+            height: 570px;
+            position: relative;
+            border:2px solid black;
+        }
+        #animate{
+            width:100px;
+            height:100px;
+            position: absolute;
+            background-color: greenyellow;
+            
+        }
+        </style>
+    </head>
+    <body onload="myMove()">
+        <div id="container">
+            <div id="animate"></div>
+        </div>
+    </body>
+    <script>
+        var pos=0;
+    function myMove(){
+        var elem=document.getElementById("animate");
+        
+        var id=setInterval(frame,10);
+        function frame(){
+            if(pos==450){
+                clearInterval(id);
+                var id1=setInterval(frame1,10);
+                function frame1(){
+                    if(pos==50){
+                        clearInterval(id1);
+                        setTimeout(function(done){
+                            myMove();
+                            done();
+                        },1000);
+                        
+                    } else{
+                        pos--;
+                        elem.style.left=pos+"px";
+                        elem.style.top=pos+"px";
+                    }
+                }
+            } else{
+                pos++;
+                elem.style.left=pos+"px";
+                elem.style.top=pos+"px";
+            }
+        }
+    }
+    </script>
+</html>

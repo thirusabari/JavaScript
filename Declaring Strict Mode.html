@@ -1,0 +1,32 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Declaring Strict Mode</title>
+        <style>
+        </style>
+    </head>
+    <body>
+        <h1>Declaring Strict Mode</h1>
+        <br>
+        <pre>Strict Mode is declared by adding "use strict" to the beginning of a script or a function.
+
+            Declared at the beginning of a script, it has global scope (all code i the script will execute in strict mode).
+        </pre>
+        <br>
+        <p id="errorName"></p>
+        <br>
+        <p id="demo"></p>
+        <script>
+        "use strict";
+        try{
+        x=10;
+        document.write("The value of x is = ",x);
+        }
+        catch(err){
+            document.getElementById("errorName").innerHTML="The Error Name = "+err.name;
+document.getElementById("demo").innerHTML="The Error Message = "+err.message;
+
+        }
+        </script>
+    </body>
+</html>

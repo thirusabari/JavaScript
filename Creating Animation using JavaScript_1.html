@@ -1,0 +1,97 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Creating Animation Using JavaScript</title>
+        <style>
+        #container{
+            width:570px;
+            height:570px;
+            background-color: indianred;
+            border:2px solid black;
+            position: relative;
+        }
+        #animation{
+            height:100px;
+            width:100px;
+            background-color: darkgreen;
+            top:0px;
+            right: 0px;
+            position: absolute;
+        }
+        #animation1{
+            height: 100px;
+            width:100px;
+            background-color:yellow;
+            position:absolute;
+
+        }
+        </style>
+    </head>
+    <body onload="chn()">
+        <div id="container">
+            <div id="animation">
+
+            </div>
+            <div id="animation1">
+
+            </div>
+        </div>
+
+    </body>
+    <script>
+        var pos=0;
+        var pos_1=0;
+        function chn(){
+            move();
+            move1();
+        }
+    function move(){
+var elem=document.getElementById("animation");
+var timer=setInterval(one,10);
+function one(){
+    if(pos==450){
+clearInterval(timer);
+var t=setInterval(ones,10);
+function ones(){
+    if(pos==20){
+        clearInterval(t);
+        move();
+    } else{
+        pos--;
+        elem.style.top=pos+"px";
+        elem.style.right=pos+"px";
+    }
+}
+    } else{
+        pos++;
+        elem.style.top=pos+"px";
+        elem.style.right=pos+"px";
+    }
+}
+    }
+    function move1(){
+        var elem1=document.getElementById("animation1");
+        var timer1=setInterval(two,10);
+        function two(){
+            if(pos==450){
+                clearInterval(timer1);
+                var t1=setInterval(twos,10);
+                function twos(){
+                    if(pos==20){
+                        clearInterval(t1);
+                        move1();
+                    } else{
+                        pos--;
+                        elem1.style.left=pos+"px";
+                        elem1.style.top=pos+"px";
+                    }
+                }
+            } else{
+                pos++;
+                elem1.style.top=pos+"px";
+                elem1.style.left=pos+"px";
+            }
+        }
+    }
+    </script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The Throw Statement</title>
+    </head>
+    <body>
+        <h1>The Throw Statement</h1>
+        <br>
+        <pre>The <b>throw</b> statement allows you to create a custom error.
+        
+        Technically you can <b>throw an exception (throw an error).</b>
+
+        The exception can be a JavaScript String, a Number, a Boolean, or an object.
+
+        If you use <b>throw</b> together with <b>try</b> and <b>catch</b>, you can control program flow and generate custom error messages.
+        </pre>
+        <br>
+        <h3>User Input Validation</h3>
+        <br>
+        <p id="demo"></p>
+        <script>
+        var x=prompt("Enter your value");
+        var y=parseInt(x);
+        try{
+        if(y == 12){
+            throw "y is not a floating point value";
+        } 
+         if(y=="TamilSelvi"){
+            throw "y is not string";
+}
+}
+catch(err){
+document.getElementById("demo").innerHTML=err.message;
+}
+        </script>
+    </body>
+</html>

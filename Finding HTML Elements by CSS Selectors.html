@@ -1,0 +1,32 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Finding HTML Elements by CSS Selectors</title>
+        <style>
+        .TamilSelvi{
+            display:none;
+        }
+        </style>
+    </head>
+    <body>
+        <h1>Finding HTML Elements by CSS Selectors</h1>
+        <br>
+        <pre>If you want to find all HTML elements that matches a specified CSS selector (id,class, names, types, attributes, values of attributes, etc,). use the querySelectorAll() method.
+
+            This example returns a list of all <b>p</b> elements with class="TamilSelvi".
+
+            <b>Note:</b>
+            <br>
+            The querySelectorAll() method does not work in Internet Explorer 8 and earlier versions.
+            <br>
+        </pre>
+        <br>
+        <p class="TamilSelvi">I Love you TamilSelvi</p>
+        <p class="TamilSelvi">TamilSelvi is my Life</p>
+        <p class="TamilSelvi">Thirunavukkarasu is TamilSelvi Husband</p>
+    </body>
+    <script>
+    var love=document.querySelectorAll("p.TamilSelvi");
+    document.write(love[0].innerHTML + ". " + love[1].innerHTML + ". " + love[2].innerHTML + ".");
+    </script>
+</html>
