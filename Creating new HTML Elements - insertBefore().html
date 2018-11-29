@@ -1,0 +1,26 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Creating new HTML Elements - insertBefore()</title>
+    </head>
+    <body>
+        <h1>Creating new HTML Elements - insertBefore()</h1>
+        <br>
+        <pre>The <b>appendChild()</b> method in the previous example, appended the new element as the last child of the parent.
+            If you don't want that you can use the insertBefore() method.
+        </pre>
+        <br>
+        <div id="demo">
+            <p id="Tamil">TamilSelvi is my wife</p>
+            <p id="Selvi">I Love you TamilSelvi</p>
+        </div>
+    </body>
+    <script>
+    var para=document.createElement("p");
+    var node=document.createTextNode("Thirunavukkarasu is TamilSelvi's Husband.");
+    var container=document.getElementById("demo");
+    container.appendChild(para);
+    var tamilselvi=document.getElementById("Tamil");
+    document.insertBefore(para,tamilselvi);
+    </script>
+</html>

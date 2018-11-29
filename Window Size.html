@@ -1,0 +1,24 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Window Size</title>
+    </head>
+    <body>
+        <h1>Window Size</h1>
+        <br>
+        <pre>Two Properties can be used to determine the size of the browser window. 
+            Both properties return the sizes in pixels: 
+            <ul>
+                <li> <b>window.innerHeight</b> - the innerHeight of the browser window (in pixels)</li>
+                <li> <b>window.innerWidth</b>  - the inner Width of the browser window (in pixels) </li>
+            </ul>
+            <br>
+            <p id="height"></p>
+            <p id="width"></p>
+        </pre>
+    </body>
+    <script>
+    document.getElementById("height").innerHTML="The Window Height is = "+window.innerHeight;
+    document.getElementById("width").innerHTML="The Window Width is = "+window.innerWidth;
+    </script>
+</html>

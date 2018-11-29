@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Passing Parameters to the Event Handler</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+        <h1>Passing Parameters to the Event Handler</h1>
+        <br>
+        <pre>When passing parameter values, use an "anonymous function" that calls the specified function with the parameters.</pre>
+        <br>
+        <button id="TamilSelvi">Tamil</button>
+        <p id="demo">one</p>
+        <br>
+    </body>
+    <script>
+    document.getElementById("TamilSelvi").addEventListener("click",function(){
+add(13,300);
+    });
+    function add(a,b){
+var sum=0;
+sum=a+b;
+document.getElementById("demo").innerHTML="The sum of two values are =" +sum;
+    }
+    </script>
+</html>

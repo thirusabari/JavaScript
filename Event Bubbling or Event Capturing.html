@@ -1,0 +1,55 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Event Bubbling or Event Capturing</title>
+        <style>
+        pre{
+            border:2px solid black;
+            height: 300px;
+        }
+        #outer{
+            width: 800px;
+            height:100px;
+            border:3px solid orangered;
+
+        }
+        </style>
+    </head>
+    <body>
+<h1>Event Bubbling or Event Capturing</h1>
+<br>
+<pre>
+    There are two ways of event propagation in the HTML, DOM, Bubbling and capturing. 
+
+    Event Propagation is a way of defining the element order when an event occurs. If you have a <b>p</b> element inside the <b>div</b> element, and the user clicks on the <b>p</b> element, which element's <q>click</q> event should be handled first? 
+
+    In <b><i>bubbling</i></b> the inner most element's event is handled first and then the outer. the <b>p</b> element's click event is handled first, then the <b>div</b> element's click event. 
+
+    In <b><i>capturing</i></b> the outer most element's event is handled first and then the inner. the <b>div</b> element's click event will be handled first and then the <b>p</b> element's click event. 
+
+    With the <b>addEventListener()</b> method you can specify the propagation type by using the <q><b>useCapture</b></q> parameter: 
+
+    <b>addEventListener(event,function, useCapture);</b> The default value is <b>false</b> which will use bubbling propagation, when the value is set to <b>true</b>, the event uses the capturing propagation. 
+</pre>
+<br>
+<div id="outer">
+    <p id="inner">I love you TamilSelvi. TamilSelvi is my wife. </p>
+</div>
+    </body>
+    <script>
+document.getElementById("outer").addEventListener("click",function(){
+    chnbackground();
+ },true );
+document.getElementById("inner").addEventListener("click",function(){
+chnfontcolor();
+},true);  
+function chnbackground(){
+    setTimeout(function(){
+    document.getElementById("outer").style.backgroundColor="white";
+},3000);
+}
+function chnfontcolor(){
+    document.getElementById("inner").style.color="cyan";
+}
+    </script>
+</html>

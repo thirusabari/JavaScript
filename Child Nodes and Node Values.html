@@ -1,0 +1,22 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Child Nodes and Node Values</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+<h1>Child Nodes and Node Values</h1>
+<br>
+<pre>A Common error in DOM processing is to expect an element node to contain text. </pre>
+<br>
+<p id="one">I Love you TamilSelvi</p>
+<p id="two"></p>
+<p id="three"></p>
+    </body>
+    <script>
+    document.getElementById("two").innerHTML=document.getElementById("one").firstChild.nodeValue;
+    document.getElementById("three").innerHTML=document.getElementById("one").childNodes[0].nodeValue;
+    </script>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The removeEventListener() Method</title>
+        <style>
+        
+        </style>
+    </head>
+    <body>
+<h1 id="head">The removeEventListener() method</h1>
+<br>
+<pre>The removeEventListener() method removes event handlers that have been attached with the addEventListener method</pre>
+<br>
+<button id="my">Try</button>
+<br>
+    </body>
+    <script>
+    document.getElementById("my").addEventListener("click",function(){
+chn();
+    });
+    function chn(){
+document.getElementById("head").innerHTML="I love you TamilSelvi";
+document.getElementById("head").style.color="red";
+document.getElementById("my").removeEventListener("click",remove);
+    }
+    function remove(){
+        document.getElementById("my").innerHTML="Thirunavukkarasu is the husband of TamilSelvi";
+    }
+    </script>>
+</html>

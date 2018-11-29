@@ -1,0 +1,23 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Creating New HTML Elements(Nodes)</title>
+    </head>
+    <body>
+<h1>Creating New HTML Elements(Nodes)</h1>
+<br>
+<pre>To add a new element to the HTML DOM, you must create the element (element node) first, and then append it to an existing element.</pre>
+<br>
+<div id="outer">
+    <p id="one">I Love you TamilSelvi</p>
+    <p oid="two">TamilSelvi is my life. Thirunavukkarasu is the husband of TamilSelvi. </p>
+</div>
+    </body>
+    <script>
+    var out=document.getElementById("outer");
+    var pow=document.createElement("p");
+    var node=document.createTextNode("TamilSelvi is the Thirunavukkarasu's Husband");
+    pow.appendChild(node);
+    outer.appendChild(pow);
+    </script>
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Removing Existing HTML Elements</title>
+    </head>
+    <body>
+        <h1>Removing Existing HTML Elements</h1>
+        <br>
+        <pre>To remove an HTML element, you must know the parent of the element: </pre>
+        <br>
+        <div id="demo">
+            <p id="one">I Love you TamilSelvi</p>
+            <p id="two">Thirunavukkarasu is TamilSelvi's wife</p>
+        </div>
+        <br>
+    </body>
+    <script>
+    var div=document.getElementById("demo");
+    var para=document.getElementById("two");
+    div.removeChild(para);
+    </script>
+</html>
