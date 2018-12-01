@@ -1,0 +1,27 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>JavaScript Window Navigator</title>
+    </head>
+    <body>
+        <h1>JavaScript Window Navigator</h1>
+        <br>
+        <pre>The <b>window.navigator</b> object can be written without the window prefix: 
+        <b>Some Examples:</b>
+        <ul>
+            <li>navigator.appName</li>
+            <li>navigator.appCodeName</li>
+            <li>navigator.platform</li>
+        </ul>
+        </pre>
+        <br>
+        <p id="appName"></p>
+        <p id="appCodeName"></p>
+        <p id="platform"></p>
+    </body>
+    <script>
+    document.getElementById("appName").innerHTML="The visitor's app name is = "+navigator.appName;
+    document.getElementById("appCodeName").innerHTML="The visitor's appCodeName is = "+navigator.appCodeName;
+    document.getElementById("platform").innerHTML="The visitor's platform is = "+navigator.platform;
+    </script>
+</html>

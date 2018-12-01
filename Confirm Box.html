@@ -1,0 +1,33 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Confirm Box</title>
+    </head>
+    <body onload="conf()">
+        <h1>Confirm Box</h1>
+        <br>
+        <pre>A Confirm Box is often used if you want the user to verify or accept something.
+
+            When a confirm box pops up, the user will have to click either "OK" or "Cancel" to proceed.
+
+            If the user clicks "OK", the box returns true. if the user clicks "Cancel", the box returns the value as false.
+
+            <b>Note:</b>
+
+            The <b>window.confirm()</b> method can be written without the window prefix:
+        </pre>
+        <br>
+        <p id="result"></p>
+    </body>
+    <script>
+    function conf(){
+        var res=document.getElementById("result");
+        var con=confirm("TamilSelvi will be my better half ?");
+        if(con==true){
+            res.innerHTML="<b>You Pressed OK</b>";
+        } else{
+            res.innerHTML="<b>You Pressed Cancel</b>";
+        }
+    }
+    </script>
+</html>
