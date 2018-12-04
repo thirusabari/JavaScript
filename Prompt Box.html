@@ -1,0 +1,28 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Prompt Box</title>
+    </head>
+    <body>
+        <h1>Prompt Box</h1>
+        <pre>A prompt box is often ued if you want the user to input a value before entering a page.
+
+            When a prompt box pops up, the user will have to click either "OK" or "Cancel" to proceed after entering an input value.
+
+            If the user clicks "OK" the box returns the input value. If the user clicks "Cancel" the box returns null.
+
+            The <b>window.prompt()</b> method can be written  without the window prefix.
+        </pre>
+        <p id="prom"></p>
+        <br>
+    </body>
+    <script>
+    var accept = prompt("I Love you TamilSelvi. Did you Love me");
+    var pro = document.getElementById("prom");
+    if(accept==="yes"){
+pro.innerHTML = accept +" .Ok TamilSelvi!";
+    } else{
+        pro.innerHTML = accept+".Sorry TamilSelvi";
+    }
+    </script>
+</html>

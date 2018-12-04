@@ -1,0 +1,70 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The setTimeout() Method</title>
+        <style>
+        #animate{
+            width:100px;
+            height:100px;
+            background-color: blueviolet;
+            position: absolute;
+
+        }
+        body{
+            position: relative;
+        }
+        </style>
+    </head>
+    <body onload="mov()">
+        <h1>The setTimeout() Method</h1>
+        <br>
+        <pre>window <b>setTimeout(function,milliSeconds);</b> The <b>window.setTimeout()</b> method can be written without the window prefix: 
+        
+        The first parameter is a function to be executed.
+
+        The second parameter indicates the number of milliSeconds before execution.
+        </pre>
+        <br>
+        <h2>How to Stop the Execution</h2>
+        <pre>The clearTimeout() method stops the execution of the function specified in setTimeout()
+
+            <b>window.clearTimeout(timeoutVariable);</b>. The <b>window.clearTimeout()</b> method can be written without the window prefix:
+
+            The clearTimeout() method uses the variable returned from setTimeout().
+
+            <b>myVar=setTimeout(function,milliSeconds);
+            clearTimeout(myVar);</b>
+            
+            If the function has not already been executed, you can stop the execution by calling the clearTimeout() method. 
+        </pre>
+        <div id="animate"></div>
+    </body>
+    <script>
+    var pos=0;
+    var box=document.getElementById("animate");
+    function mov(){
+        move();
+    }
+    function move(){
+        
+        if(pos<1250){
+                pos++;
+                box.style.left=pos+"px";
+                var time=setTimeout(move,5);
+            } else{
+                clearTimeout(time);
+                mo();
+            }
+    }
+    function mo(){
+                    if(pos>5){
+                        pos--;
+                        box.style.left=pos+"px";
+                        var time1=setTimeout(mo,5);
+                    } else{
+                        clearTimeout(time1);
+                        mov();
+                    }
+                }            
+    </script>
+</html>
