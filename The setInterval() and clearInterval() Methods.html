@@ -1,0 +1,72 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>The setInterval() and clearInterval() Methods</title>
+        <style>
+        #container{
+            width:80px;
+            height: 80px;
+            position:absolute;
+            background-color: chocolate;
+        }
+        </style>
+    </head>
+    <body onload="setTimeout(move,1000)">
+        <h1>The setInterval() Method</h1>
+        <pre>The <b>setInterval()</b> method repeats a given function at every given time interval.
+        
+            <b>window.setInterval(function, milliSeconds);</b> The <b>window.setInterval()</b> method can be written without the window prefix:
+
+            The first parameter is the function to be executed. 
+
+            The second parameter indicates the length of the time-interval between each execution.
+
+            This example executes a function called "myTimer" once every second (like a digital match).
+        </pre>
+        <br>
+        <h2>How to stop the Execution?</h2>
+        <pre>The <b>clearInterval()</b> method stops the executions of the functions specified in the setInterval() method.
+        
+        <b>window.clearInterval(timerVariable);</b>  
+
+        The <b>window.clearInterval()</b> method can be written without the window prefix.
+
+        The <b>clearInterval()</b> method uses the variable returned from the setInterval().
+
+        <b><i>myVar=setInterval(function,milliSeconds);
+        clearInterval(myVar;)
+    </i></b>
+         </pre>
+         <div id="container">
+
+         </div>
+    </body>
+    <script>
+    var pos=6;
+var box=document.getElementById("container");
+function move(){
+        setInterval(function(){
+            if(pos<=1250 ){
+            box.style.left=pos+"px";
+        pos++;
+    } else{
+        clearInterval();
+        mov();
+    }
+        },5)
+    
+}
+function mov(){
+    setInterval(function(){
+     if(pos>=5){
+         box.style.left=pos+"px";
+         pos--;
+
+     }   else{
+         clearInterval();
+         move();
+     }
+    },10);
+}
+    </script>
+</html>

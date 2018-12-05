@@ -1,0 +1,29 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Create a Cookie With JavaScript</title>
+    </head>
+    <body onload="setTimeout(cookie,8000)">
+        <h1>Create a Cookie With JavaScript</h1>
+        <pre>JavaScript can create, read, and delete cookie with the <b>document.cookie</b> property.
+        
+        With JavaScript, a cookie can be created like this: 
+        document.cookie="username=Thirunavukkarasu G";
+        You can also add an expiry date (in UTC time).
+
+        <b>By Default, the cookie belongs to the current page.</b>
+        </pre>
+        <h2>Read a Cookie With JavaScript</h2>
+        <pre>With a JavaScript, cookies can be read like this: 
+            var x=document.cookie;
+            document.cookie will return all cookies in one string much like: cookie1=value1;cookie2=value2;cookie3=value3;
+        </pre>
+    </body>
+    <script>
+        function cookie(){
+   document.cookie="username=Thirunavukkarasu";
+    var cook=document.cookie;
+    document.write("<b>The current page cookie value is = "+cook+"</b>");
+}
+    </script>
+</html>
