@@ -1,0 +1,16 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>JSON-Sending Data</title>
+    </head>
+    <body>
+        <h1>Sending Data Through JSON</h1>
+        <pre>If you have data stored in  a JavaScript object, you can convert the object into JSON, and send into a server:</pre>
+        <p id="send">Data</p>
+    </body>
+    <script>
+    var myObj={"name":"Thirunavukkarasu","age":26,"city":"Namakkal"};
+    var newJSON=JSON.stringify(myObj);
+    document.getElementById("send").innerHTML="<b>The new JSON Object is = "+newJSON+"</b>";
+    </script>
+</html>

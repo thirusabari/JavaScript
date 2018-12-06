@@ -1,0 +1,18 @@
+<!DOCTYPEhtml>
+<html>
+    <head>
+        <title>Receiving Data with JSON</title>
+    </head>
+    <body>
+        <h1>Receiving Data with JSON</h1>
+        <pre>
+            If you recieve data in JSON format, you can convert it into a JavaScript Object. 
+        </pre>
+        <p id="receive"></p>
+    </body>
+    <script>
+    var newJSON='{"name":"THirunavukkarasu","age":26,"city":"Namakkal"}';
+    var newObject=JSON.parse(newJSON);
+    document.getElementById("receive").innerHTML="The JavaScript Converted Object is = <b>"+newObject.toString()+"</b>";
+    </script>
+</html>
